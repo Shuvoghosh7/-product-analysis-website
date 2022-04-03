@@ -2,11 +2,12 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Image from '../../image.png'
 import useReviews from '../Hooks/useReviews';
+import ShowReview from '../ShowReview/ShowReview';
 
 
 const Home = () => {
-    const[review,setReview]=useReviews()
-    console.log(review)
+    const[reviews,setReviews]=useReviews()
+    console.log(reviews)
     return (
         <div>
             <div className='grid md:grid-cols-2 mt-24'>
@@ -20,12 +21,21 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='review-container'>
-                <p>Customer Review</p>
-
-                <Link to='/review'>
+            <div className='review-container my-7'>
+                <p className='text-5xl text-center font-bold'>Customer Review</p>
+                 <div className='grid md:grid-cols-3 gap-4'>
+                     {
+                         reviews.map(review => <ShowReview
+                         key={review.id}
+                         review={review}
+                         />)
+                     }
+                 </div>
+                <div className='text-center'>
+                <Link className='text-3xl  p-3 rounded-lg bg-slate-800 text-white' to='/review'>
                  See more
                 </Link>
+                </div>
 
             </div>
         </div>
