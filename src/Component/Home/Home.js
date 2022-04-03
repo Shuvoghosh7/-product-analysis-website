@@ -10,7 +10,7 @@ const Home = () => {
     console.log(reviews)
     return (
         <div>
-            <div className='grid md:grid-cols-2 mt-24'>
+            <div className='grid md:grid-cols-1 lg:grid-cols-2 mt-24'>
                 <div className='ml-10'>
                     <p className='text-7xl text-slate-500'> Asus ROG Zephyrus G15</p>
                     <p className='text-7xl text-indigo-800'>The best gaming laptop</p>
@@ -22,8 +22,8 @@ const Home = () => {
             </div>
 
             <div className='review-container my-7'>
-                <p className='text-5xl text-center font-bold'>Customer Review</p>
-                 <div className='grid md:grid-cols-3 gap-4'>
+                <p className='text-5xl text-center font-bold mb-10'>Customer Review</p>
+                 <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4'>
                      {
                          reviews.map(review => <ShowReview
                          key={review.id}

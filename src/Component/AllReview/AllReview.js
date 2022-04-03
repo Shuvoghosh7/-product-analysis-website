@@ -1,7 +1,7 @@
 import React from 'react';
 
-const ShowReview = (props) => {
-   const{picture,review,ratting,name}=props.review
+const AllReview = (props) => {
+    const{picture,review,ratting,name}=props.review
     return (
         <div>
             <div >
@@ -16,4 +16,4 @@ const ShowReview = (props) => {
     );
 };
 
-export default ShowReview;
+export default AllReview;
