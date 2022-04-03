@@ -1,0 +1,44 @@
+[
+    {
+        "id": "0001",
+        "picture": "https://randomuser.me/api/portraits/men/11.jpg",
+        "name": "Mahatma Gandhi",
+        "review": "This can paly any game,new or old.PUBG? Smooth as butter. Overwatch? 100+ frames. DOOM 2016? No problem!",
+        "ratting": "5 out of 5 stars  "
+    },
+    {
+        "id": "0002",
+        "picture": "https://randomuser.me/api/portraits/men/67.jpg",
+        "name": "Dadabhai Naoroji",
+        "review": "This laptop is great for its price, and you aren't gonna find much better.he screen is OK, the battery life is OK, and the thermals/fan noise is OK,",
+        "ratting": "4 out of 5 stars  "
+    },
+    {
+        "id": "0003",
+        "picture": "https://randomuser.me/api/portraits/men/30.jpg",
+        "name": "Burnett Boyer",
+        "review": "I have to admit that this is my fourth ASUS gaming laptop purchase. They have been doing a really great job with gaming laptops for at least 5 years ",
+        "ratting": "4.5 out of 5 stars  "
+    },
+    {
+        "id": "0004",
+        "picture": "https://randomuser.me/api/portraits/men/69.jpg",
+        "name": "Patsy Maddox",
+        "review": "First one I ordered caught fire at the charging port during the first week. Amazon replaced. Second one now shuts down at random with battery charged as well as being connected to AC power. Amazon's return policy is 30 days.",
+        "ratting": "1 out of 5 stars  "
+    },
+    {
+        "id": "0005",
+        "picture": "https://randomuser.me/api/portraits/men/49.jpg",
+        "name": "Odonnell Monroe",
+        "review": "I have to admit that this is my fourth ASUS gaming laptop purchase. They have been doing a really great job with gaming laptops for at least 5 years.",
+        "ratting": "5 out of 5 stars  "
+    },
+    {
+        "id": "0006",
+        "picture": "https://randomuser.me/api/portraits/men/28.jpg",
+        "name": "Odonnell Monroe",
+        "review": "The laptop is starting to massively overheat after half an hour of gaming, have already had games crash on me in-game from overheating",
+        "ratting": "3.5 out of 5 stars  "
+    }
+]
