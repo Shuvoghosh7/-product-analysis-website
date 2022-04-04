@@ -5,7 +5,7 @@ import './NavBar.css'
 
 const NavBar = () => {
     return (
-        <div className='text-center my-5 navBar'>
+        <div className='text-center  navBar my-5'>
             <CustomLink to='/'>HOME</CustomLink>
             <CustomLink to='/review'>REVIEW</CustomLink>
             <CustomLink to='/dashBoard'>DASHBOARD</CustomLink>

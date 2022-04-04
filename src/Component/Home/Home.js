@@ -12,9 +12,10 @@ const Home = () => {
         <div>
             <div className='grid md:grid-cols-1 lg:grid-cols-2 mt-24'>
                 <div className='ml-10 mt-10'>
-                    <p className='text-7xl text-slate-500'> Asus ROG Zephyrus G15</p>
-                    <p className='text-7xl text-indigo-800'>The best gaming laptop</p>
+                    <p className='text-5xl text-slate-500'> Asus ROG Zephyrus G15</p>
+                    <p className='text-5xl text-indigo-800'>The best gaming laptop</p>
                     <p className='text-2xl text-justify mt-8 mr-10'>Asus’s ROG Zephyrus G14 was our top gaming laptop pick for quite a while. It did just about everything right, and we weren’t sure whether Asus could ever replicate its resounding success. </p>
+                    <button className='bg-slate-500 mt-7 p-5 rounded-lg text-white text-xl'>LIVE DEMO</button>
                 </div>
                 <div>
                      <img src={Image} alt="" />
@@ -32,8 +33,8 @@ const Home = () => {
                      }
                  </div>
                 <div className='text-center mt-10'>
-                <Link className='text-3xl  p-3 rounded-lg bg-slate-800 text-white' to='/review'>
-                 See more
+                <Link className='text-2xl  p-3 rounded-lg bg-slate-800 text-white' to='/review'>
+                 See All Reviews
                 </Link>
                 </div>
 

@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import { Area, AreaChart, Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Pie, PieChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, Bar, BarChart, CartesianGrid, ComposedChart, Legend, Line, LineChart, Pie, PieChart, Tooltip, XAxis, YAxis } from 'recharts';
 
 const DashBoard = () => {
-    const [data,setData]=useState([])
+    const [data, setData] = useState([])
     console.log(data)
-    useEffect(()=>{
+    useEffect(() => {
         fetch('data.json')
-        .then(res =>res.json())
-        .then(data => setData(data))
-    },[])
+            .then(res => res.json())
+            .then(data => setData(data))
+    }, [])
 
-    
+
     return (
-        <div className='grid md:grid-cols-2 lg:grid-cols-2 gap-4 mt-10 '>
-            <div className='flex justify-center'>
+        <div className='grid md:grid-cols-2 lg:grid-cols-2 gap-10 mt-10 '>
+            <div className='ml-5'>
+                <p className='text-center text-indigo-600 text-xl font-bold'>MONTH WISE SELL</p>
                 <LineChart width={400} height={400} data={data}>
                     <Line dataKey="month" stroke="#8884d8" />
                     <Line dataKey="sell" stroke="#8884d8" />
@@ -25,6 +26,7 @@ const DashBoard = () => {
 
 
             <div>
+                <p className='text-center text-indigo-600 text-xl font-bold'>INVESTMENT VS REVENUE</p>
                 <AreaChart
                     width={400}
                     height={400}
@@ -41,9 +43,11 @@ const DashBoard = () => {
                 </AreaChart>
 
             </div>
-            
-            <div className='flex justify-center'>
+
+            <div >
+                <p className='text-center text-indigo-600 text-xl font-bold'>INVESTMENT VS REVENUE</p>
                 <BarChart
+
                     width={500}
                     height={400}
                     data={data}
@@ -60,17 +64,30 @@ const DashBoard = () => {
                     <Tooltip />
                     <Legend />
                     <Bar dataKey="month" stackId="a" fill="#8884d8" />
-                    <Bar dataKey="investment" stackId="a" fill="#82ca9d" />
+
                     <Bar dataKey="revenue" stackId="a" fill="#82ca9d" />
+
                 </BarChart>
             </div>
             <div>
+                <p className='text-center text-indigo-600 text-xl font-bold mr-12'>INVESTMENT VS REVENUE</p>
                 <PieChart width={400} height={400}>
-                    <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
-                    <Pie data={data} dataKey="revenue" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label />
+                    <Pie
+                        dataKey="revenue"
+                        isAnimationActive={false}
+                        data={data}
+                        cx="50%"
+                        cy="50%"
+                        outerRadius={80}
+                        fill="#C71585"
+                        label
+                    />
+                    <Pie dataKey="investment" data={data} cx={500} cy={200} innerRadius={40} outerRadius={80} fill="#82ca9d" />
                     <Tooltip />
                 </PieChart>
             </div>
+
+
         </div>
 
 
