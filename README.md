@@ -1,6 +1,15 @@
-# Getting Started with Create React App
+# CUSTOMER REVIEW SYSTEM 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Live Site LinK:
+
+# Project Description
+* This site is simple customer review system.
+* This site has navigation bar.navigation bar has (HOME,REVIEW,DASHBOARD,BLOGS)
+* Home page have a product picture and product description.
+* Under the Home page has 3 customer reviews and a button.
+*  When clicking this button, open review component and show all customer reviews.
+* Dhash Board added 4 rechart.rechart are LineChart,AreaChart,BarChart,PieChart.
+* Blogs component  added 2 question and answer
 
 ## Available Scripts
 
