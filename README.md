@@ -1,7 +1,7 @@
 # CUSTOMER REVIEW SYSTEM 
 
 # Live Site LinK:
- https://cheerful-malabi-432de5.netlify.app/blogs
+ https://cheerful-malabi-432de5.netlify.app/
 
 # Project Description
 * This site is simple customer review system.
