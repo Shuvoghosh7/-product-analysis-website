@@ -5,7 +5,7 @@ import useReviews from '../Hooks/useReviews';
 const Review = () => {
     const[reviews,setReviews]=useReviews()
     return (
-        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4'>
+        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-7'>
             {
                 reviews.map(review => <AllReview
                 key={review.id}
